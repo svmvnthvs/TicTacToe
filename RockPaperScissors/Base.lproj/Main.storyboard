@@ -1,24 +1,231 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fX1-bs-tgR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller2-->
+        <scene sceneID="3oV-kx-yXs">
+            <objects>
+                <viewController id="fX1-bs-tgR" customClass="ViewController2" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L5p-6U-hCA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's play a game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCE-Yf-K2A">
+                                <rect key="frame" x="121" y="205" width="133" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2B0-MB-66X">
+                                <rect key="frame" x="142" y="400" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Piano Tiles"/>
+                                <connections>
+                                    <segue destination="oCb-LI-t0M" kind="presentation" modalTransitionStyle="flipHorizontal" id="o5o-jX-RdT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sF-GA-yQ6">
+                                <rect key="frame" x="134" y="307" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tic Tac Toe"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="flipHorizontal" id="Vme-9J-bgE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Gb-xW-0wv"/>
+                    </view>
+                    <connections>
+                        <outlet property="Label" destination="fCE-Yf-K2A" id="7rV-2P-Z4b"/>
+                        <outlet property="PianoTiles" destination="2B0-MB-66X" id="g5j-dR-PR5"/>
+                        <outlet property="TicTacToe" destination="6sF-GA-yQ6" id="tSg-Po-qXC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1he-LI-2zt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-687.20000000000005" y="129.98500749625188"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="vqi-Xy-SHb">
+            <objects>
+                <viewController id="oCb-LI-t0M" customClass="ViewController3" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QIZ-1n-nNK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tot-Qa-PCt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home Screen"/>
+                                <connections>
+                                    <segue destination="fX1-bs-tgR" kind="presentation" modalTransitionStyle="flipHorizontal" id="J24-eQ-kAb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DXR-hK-enE"/>
+                    </view>
+                    <connections>
+                        <outlet property="HomeScreen3" destination="Tot-Qa-PCt" id="Hdb-vB-CeE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="shx-fx-6un" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1327.2" y="798.35082458770626"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNf-uN-HgQ">
+                                <rect key="frame" x="62" y="566" width="261" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O2g-VN-ERy"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hSd-Fl-AtL">
+                                <rect key="frame" x="-1" y="138" width="360" height="354"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="frB-vW-YJH">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="118"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gs-T6-alZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="118"/>
+                                                <inset key="contentEdgeInsets" minX="60" minY="50" maxX="60" maxY="50"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Button1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Slc-Fh-FGA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYG-QM-J3D" userLabel="Button2">
+                                                <rect key="frame" x="120" y="0.0" width="120" height="118"/>
+                                                <inset key="contentEdgeInsets" minX="60" minY="50" maxX="60" maxY="50"/>
+                                                <connections>
+                                                    <action selector="Button2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dOa-o7-Xjk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovR-b2-SV6" userLabel="Button3">
+                                                <rect key="frame" x="240" y="0.0" width="120" height="118"/>
+                                                <inset key="contentEdgeInsets" minX="60" minY="50" maxX="60" maxY="50"/>
+                                                <connections>
+                                                    <action selector="Button3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ivg-CO-iGD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lbb-Iq-BWT">
+                                        <rect key="frame" x="0.0" y="118" width="360" height="118"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EZ-91-zJd">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="118"/>
+                                                <inset key="contentEdgeInsets" minX="60" minY="50" maxX="60" maxY="50"/>
+                                                <connections>
+                                                    <action selector="Button4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s28-ZC-ZR0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kub-QF-A5S">
+                                                <rect key="frame" x="120" y="0.0" width="120" height="118"/>
+                                                <inset key="contentEdgeInsets" minX="60" minY="50" maxX="60" maxY="50"/>
+                                                <connections>
+                                                    <action selector="Button5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aEu-Pm-9rP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icr-1c-SZ5">
+                                                <rect key="frame" x="240" y="0.0" width="120" height="118"/>
+                                                <inset key="contentEdgeInsets" minX="60" minY="50" maxX="60" maxY="50"/>
+                                                <connections>
+                                                    <action selector="Button6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CCD-Pe-oaQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J7q-mn-eeW">
+                                        <rect key="frame" x="0.0" y="236" width="360" height="118"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2t-Hz-Tqb">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="118"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                                </accessibility>
+                                                <inset key="contentEdgeInsets" minX="60" minY="50" maxX="60" maxY="50"/>
+                                                <connections>
+                                                    <action selector="Button7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MhV-Kt-cRf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrY-w8-I3A">
+                                                <rect key="frame" x="120" y="0.0" width="120" height="118"/>
+                                                <inset key="contentEdgeInsets" minX="60" minY="50" maxX="60" maxY="50"/>
+                                                <connections>
+                                                    <action selector="Button8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="teC-GB-Efb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNd-fg-FwE">
+                                                <rect key="frame" x="240" y="0.0" width="120" height="118"/>
+                                                <inset key="contentEdgeInsets" minX="60" minY="50" maxX="60" maxY="50"/>
+                                                <connections>
+                                                    <action selector="Button9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VrQ-99-qSw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHx-Xg-g0C">
+                                <rect key="frame" x="106" y="38" width="173" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home Screen"/>
+                                <connections>
+                                    <segue destination="fX1-bs-tgR" kind="presentation" modalTransitionStyle="flipHorizontal" id="HuD-Eo-53U"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="Button1" destination="5gs-T6-alZ" id="YMa-UI-JaY"/>
+                        <outlet property="Button2" destination="NYG-QM-J3D" id="dpd-G9-5Ln"/>
+                        <outlet property="Button3" destination="ovR-b2-SV6" id="lZ0-z4-Gh0"/>
+                        <outlet property="Button4" destination="7EZ-91-zJd" id="vkQ-kN-pfI"/>
+                        <outlet property="Button5" destination="Kub-QF-A5S" id="gF0-kx-71K"/>
+                        <outlet property="Button6" destination="Icr-1c-SZ5" id="rDe-jb-6SI"/>
+                        <outlet property="Button7" destination="U2t-Hz-Tqb" id="IiZ-4f-4x4"/>
+                        <outlet property="Button8" destination="nrY-w8-I3A" id="GCz-kN-zx4"/>
+                        <outlet property="Button9" destination="yNd-fg-FwE" id="Js6-FI-iFk"/>
+                        <outlet property="HomeScreen" destination="fHx-Xg-g0C" id="NWn-t6-eSo"/>
+                        <outlet property="resetButton" destination="YNf-uN-HgQ" id="BT7-5S-qvU"/>
+                        <outlet property="stackView" destination="hSd-Fl-AtL" id="vxs-mz-RKL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="HuD-Eo-53U"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>

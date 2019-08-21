@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		285F3ED6228B5DFE0077DAAB /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F3ED5228B5DFE0077DAAB /* ViewController3.swift */; };
+		285F3EDF228B66F10077DAAB /* PianoTiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F3EDE228B66F10077DAAB /* PianoTiles.swift */; };
+		285F3EE1228B66FD0077DAAB /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F3EE0228B66FD0077DAAB /* Tile.swift */; };
+		285F3EE5228B67760077DAAB /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F3EE4228B67760077DAAB /* Column.swift */; };
 		289166312283527D00DDA22E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289166302283527D00DDA22E /* AppDelegate.swift */; };
 		289166332283527D00DDA22E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289166322283527D00DDA22E /* ViewController.swift */; };
 		289166362283527D00DDA22E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289166342283527D00DDA22E /* Main.storyboard */; };
 		289166382283527F00DDA22E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 289166372283527F00DDA22E /* Assets.xcassets */; };
-		2891663B2283527F00DDA22E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289166392283527F00DDA22E /* LaunchScreen.storyboard */; };
 		289166462283527F00DDA22E /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289166452283527F00DDA22E /* RockPaperScissorsTests.swift */; };
+		2891665122835A8900DDA22E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2891665022835A8900DDA22E /* Player.swift */; };
+		289166532283747B00DDA22E /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289166522283747B00DDA22E /* Board.swift */; };
+		289166552283763100DDA22E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289166542283763100DDA22E /* Game.swift */; };
+		28AF3513228B46C3004FC68D /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF3512228B46C2004FC68D /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +33,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		285F3ED5228B5DFE0077DAAB /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		285F3EDE228B66F10077DAAB /* PianoTiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoTiles.swift; sourceTree = "<group>"; };
+		285F3EE0228B66FD0077DAAB /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		285F3EE4228B67760077DAAB /* Column.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Column.swift; sourceTree = "<group>"; };
 		2891662D2283527D00DDA22E /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		289166302283527D00DDA22E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		289166322283527D00DDA22E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		289166352283527D00DDA22E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		289166372283527F00DDA22E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2891663A2283527F00DDA22E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2891663C2283527F00DDA22E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		289166412283527F00DDA22E /* RockPaperScissorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		289166452283527F00DDA22E /* RockPaperScissorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsTests.swift; sourceTree = "<group>"; };
 		289166472283527F00DDA22E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2891665022835A8900DDA22E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		289166522283747B00DDA22E /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		289166542283763100DDA22E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		28AF3512228B46C2004FC68D /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +70,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		285F3EDD228B66DC0077DAAB /* Piano Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				285F3EDE228B66F10077DAAB /* PianoTiles.swift */,
+				285F3EE0228B66FD0077DAAB /* Tile.swift */,
+				285F3ED5228B5DFE0077DAAB /* ViewController3.swift */,
+				285F3EE4228B67760077DAAB /* Column.swift */,
+			);
+			path = "Piano Tiles";
+			sourceTree = "<group>";
+		};
 		289166242283527D00DDA22E = {
 			isa = PBXGroup;
 			children = (
+				285F3EDD228B66DC0077DAAB /* Piano Tiles */,
 				2891662F2283527D00DDA22E /* RockPaperScissors */,
 				289166442283527F00DDA22E /* RockPaperScissorsTests */,
 				2891662E2283527D00DDA22E /* Products */,
@@ -79,10 +105,13 @@
 			children = (
 				289166302283527D00DDA22E /* AppDelegate.swift */,
 				289166322283527D00DDA22E /* ViewController.swift */,
+				289166522283747B00DDA22E /* Board.swift */,
+				2891665022835A8900DDA22E /* Player.swift */,
+				289166542283763100DDA22E /* Game.swift */,
 				289166342283527D00DDA22E /* Main.storyboard */,
 				289166372283527F00DDA22E /* Assets.xcassets */,
-				289166392283527F00DDA22E /* LaunchScreen.storyboard */,
 				2891663C2283527F00DDA22E /* Info.plist */,
+				28AF3512228B46C2004FC68D /* ViewController2.swift */,
 			);
 			path = RockPaperScissors;
 			sourceTree = "<group>";
@@ -177,7 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2891663B2283527F00DDA22E /* LaunchScreen.storyboard in Resources */,
 				289166382283527F00DDA22E /* Assets.xcassets in Resources */,
 				289166362283527D00DDA22E /* Main.storyboard in Resources */,
 			);
@@ -198,7 +226,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				289166332283527D00DDA22E /* ViewController.swift in Sources */,
+				289166552283763100DDA22E /* Game.swift in Sources */,
+				285F3EE1228B66FD0077DAAB /* Tile.swift in Sources */,
+				285F3EE5228B67760077DAAB /* Column.swift in Sources */,
+				2891665122835A8900DDA22E /* Player.swift in Sources */,
+				285F3EDF228B66F10077DAAB /* PianoTiles.swift in Sources */,
+				289166532283747B00DDA22E /* Board.swift in Sources */,
 				289166312283527D00DDA22E /* AppDelegate.swift in Sources */,
+				285F3ED6228B5DFE0077DAAB /* ViewController3.swift in Sources */,
+				28AF3513228B46C3004FC68D /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,14 +263,6 @@
 				289166352283527D00DDA22E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		289166392283527F00DDA22E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2891663A2283527F00DDA22E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -359,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RockPaperScissors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RockPaperScissors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
